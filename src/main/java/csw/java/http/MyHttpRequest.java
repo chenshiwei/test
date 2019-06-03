@@ -93,7 +93,7 @@ public class MyHttpRequest {
             conn.connect();
             // 定义 BufferedReader输入流来读取URL的响应,设置接收格式
             in = new BufferedReader(new InputStreamReader(
-                    conn.getInputStream(), charset));
+                conn.getInputStream(), charset));
             while ((line = in.readLine()) != null) {
                 sb.append(line);
             }
@@ -150,7 +150,7 @@ public class MyHttpRequest {
             out.flush();
             // 定义BufferedReader输入流来读取URL的响应    设置接收格式
             in = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream(), charset));
+                new InputStreamReader(conn.getInputStream(), charset));
             while ((line = in.readLine()) != null) {
                 sb.append(line);
             }

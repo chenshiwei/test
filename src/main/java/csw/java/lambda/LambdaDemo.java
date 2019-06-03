@@ -26,17 +26,17 @@ public class LambdaDemo {
 //        iEat2.eat();
 
         // 带参
-        IEat iEat3 =  thing  -> System.out.println("eat " + thing);
+        IEat iEat3 = thing -> System.out.println("eat " + thing);
         iEat3.eat("banana");
         IEat.method();
 
         iEat3.print();
 
         Student[] students = {
-                new Student("张三", 18),
-                new Student("张四", 20),
-                new Student("张一", 15),
-                new Student("张二", 17)
+            new Student("张三", 18),
+            new Student("张四", 20),
+            new Student("张一", 15),
+            new Student("张二", 17)
         };
         Arrays.sort(students, (o1, o2) -> o2.getAge() - o1.getAge());
         System.out.println(Arrays.toString(students));
@@ -46,11 +46,11 @@ public class LambdaDemo {
 interface IEat {
     void eat(String thing);
 
-    default void print(){
+    default void print() {
         System.out.println("asjo");
     }
 
-    static void method(){
+    static void method() {
         System.out.println("aks");
     }
 }

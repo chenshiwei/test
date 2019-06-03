@@ -15,7 +15,7 @@ public class DoubleTest {
     public static void main(String[] args) {
         List<String> features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
         features.forEach(System.out::println);
-        features.stream().map((s)->{
+        features.stream().map((s) -> {
             String[] token = s.split(" ");
             return token.length;
         }).forEach(System.out::println);

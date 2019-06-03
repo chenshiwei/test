@@ -9,15 +9,15 @@ package csw.java.data.structure;
 @SuppressWarnings("unused")
 public interface Queue {
 
-  int size();
+    int size();
 
-  boolean isEmpty();
+    boolean isEmpty();
 
-  Object dequeue();
+    Object dequeue();
 
-  Object peek();
+    Object peek();
 
-  void enqueue(Object o);
+    void enqueue(Object o);
 
 }
 

@@ -9,50 +9,50 @@ package csw.java.data.structure;
 @SuppressWarnings("unused")
 public interface IBinaryTree {
 
-  int size();
+    int size();
 
-  boolean isEmpty();
+    boolean isEmpty();
 
-  int getHeight();
+    int getHeight();
 
-  Node findKey(Object value);
+    Node findKey(Object value);
 
-  void preOrderTraverse();
+    void preOrderTraverse();
 
-  void inOrderTraverse();
+    void inOrderTraverse();
 
-  void postOrderTraverse();
+    void postOrderTraverse();
 
-  void preOrderByStack();
+    void preOrderByStack();
 
-  void inOrderByStack();
+    void inOrderByStack();
 
-  void postOrderByStack();
+    void postOrderByStack();
 
-  void levelOrderByStack();
+    void levelOrderByStack();
 }
 
-class Node{
-  Object value;
-  Node leftChild;
-  Node rightChild;
+class Node {
+    Object value;
+    Node leftChild;
+    Node rightChild;
 
-  public Node(Object value) {
-    this.value = value;
-  }
+    public Node(Object value) {
+        this.value = value;
+    }
 
-  public Node(Object value, Node leftChild, Node rightChild) {
-    this.value = value;
-    this.leftChild = leftChild;
-    this.rightChild = rightChild;
-  }
+    public Node(Object value, Node leftChild, Node rightChild) {
+        this.value = value;
+        this.leftChild = leftChild;
+        this.rightChild = rightChild;
+    }
 
-  @Override
-  public String toString() {
-    return "Node{" +
-        "value=" + value +
-        ", leftChild=" + leftChild +
-        ", rightChild=" + rightChild +
-        '}';
-  }
+    @Override
+    public String toString() {
+        return "Node{" +
+            "value=" + value +
+            ", leftChild=" + leftChild +
+            ", rightChild=" + rightChild +
+            '}';
+    }
 }

@@ -1,6 +1,9 @@
 package csw.java.serializable;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
 
 /**
  * 作用:
@@ -9,7 +12,7 @@ import java.io.*;
  * @since 2018/9/7
  */
 public class TestIn {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         File file = new File("stu.db");
         InputStream in = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(in);

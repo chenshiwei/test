@@ -30,9 +30,9 @@ public class Jdbc2Test {
             for (int i = 0; i < 10000; i++) {
                 long hours = System.currentTimeMillis() / 3600000 - rand.nextInt(10000);
                 sb.append("('trend").append(rand.nextInt(100)).append("',")
-                        .append(hours * 3600000)
-                        .append(",").append(statusList.get(rand.nextInt(statusList.size())))
-                        .append("),");
+                    .append(hours * 3600000)
+                    .append(",").append(statusList.get(rand.nextInt(statusList.size())))
+                    .append("),");
             }
             sb.deleteCharAt(sb.lastIndexOf(","));
             System.out.println(sb);

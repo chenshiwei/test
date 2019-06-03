@@ -9,15 +9,15 @@ package csw.java.data.structure;
 @SuppressWarnings("unused")
 public interface Stack {
 
-  int size();
+    int size();
 
-  boolean isEmpty();
+    boolean isEmpty();
 
-  Object pop();
+    Object pop();
 
-  Object peek();
+    Object peek();
 
-  void push(Object o);
+    void push(Object o);
 
 }
 

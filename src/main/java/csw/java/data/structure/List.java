@@ -9,25 +9,25 @@ package csw.java.data.structure;
 @SuppressWarnings("unused")
 public interface List {
 
-  int size();
+    int size();
 
-  Object get(int index);
+    Object get(int index);
 
-  boolean isEmpty();
+    boolean isEmpty();
 
-  boolean contains(Object o);
+    boolean contains(Object o);
 
-  int indexOf(Object o);
+    int indexOf(Object o);
 
-  void add(int index, Object element);
+    void add(int index, Object element);
 
-  void add(Object e);
+    void add(Object e);
 
-  Object remove(int index);
+    Object remove(int index);
 
-  boolean remove(Object o);
+    boolean remove(Object o);
 
-  Object replace(int index, Object element);
+    Object replace(int index, Object element);
 
 }
 

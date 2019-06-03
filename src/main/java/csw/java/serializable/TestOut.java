@@ -12,7 +12,7 @@ import java.io.OutputStream;
  * @since 2018/9/7
  */
 public class TestOut {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         File file = new File("stu.db");
         OutputStream out = new FileOutputStream(file);
         ObjectOutputStream oos = new ObjectOutputStream(out);

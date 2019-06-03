@@ -22,8 +22,8 @@ public class ArraysTest {
         System.out.println(Arrays.toString(arr1));
 
         int a[] = new int[50];
-        for(int i = 0; i < 50; i++){
-            a[i] = (int)(Math.random()*50);
+        for (int i = 0; i < 50; i++) {
+            a[i] = (int) (Math.random() * 50);
         }
         int[] arr2 = new int[]{3, -4, 25, 16, 30, 18};
 

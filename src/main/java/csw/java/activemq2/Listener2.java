@@ -7,21 +7,21 @@ import javax.jms.TextMessage;
 
 /**
  * 消息监听
- * @author Administrator
  *
+ * @author Administrator
  */
-public class Listener2 implements MessageListener{
+public class Listener2 implements MessageListener {
 
-	@Override
-	public void onMessage(Message message) {
-		// TODO Auto-generated method stub
-		try {
-			System.out.println("收到2的消息："+((TextMessage)message).getText());
-		} catch (JMSException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    @Override
+    public void onMessage(Message message) {
+        // TODO Auto-generated method stub
+        try {
+            System.out.println("收到2的消息：" + ((TextMessage) message).getText());
+        } catch (JMSException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 
 }
 

@@ -9,9 +9,9 @@ import java.util.Random;
  * @since 2018/9/5
  */
 
-public class BinaryTreeDemo{
-    public static void main(String[] args){
-        BinaryTree binaryTree=new BinaryTree();
+public class BinaryTreeDemo {
+    public static void main(String[] args) {
+        BinaryTree binaryTree = new BinaryTree();
         binaryTree.add(8);
         binaryTree.add(3);
         binaryTree.add(10);
@@ -24,7 +24,7 @@ public class BinaryTreeDemo{
         binaryTree.print();
         System.out.println();
         Random rand = new Random();
-        BinaryTree bt=new BinaryTree();
+        BinaryTree bt = new BinaryTree();
         for (int i = 0; i < 20; i++) {
             bt.add(rand.nextInt(1000));
         }

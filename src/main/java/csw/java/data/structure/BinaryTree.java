@@ -46,7 +46,7 @@ public class BinaryTree {
             if (this.left != null) {
                 this.left.printNode();
             }
-            System.out.print(this.data+"->");
+            System.out.print(this.data + "->");
             if (this.right != null) {
                 this.right.printNode();
             }
