@@ -31,9 +31,8 @@ public class Test {
         list.add(new foo());
 
         System.out.println(list.get(1));
-        System.out.println(list);
+        System.out.println(Integer.MIN_VALUE);
         System.out.println(list.get(3));
-
     }
 
 }

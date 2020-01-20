@@ -2,11 +2,11 @@ package csw.scala.test
 
 object Test extends App {
 
-    val list = List(1, 2, 3)
-    val i1 = list.reduceLeft(_ - _)
-    val i2 = list.reduceRight(_ - _)
-    println(i1)
-    println(i2)
+    import scala.io.Source
+    val source = Source.fromFile("F:\\数据\\2018-123.csv", "UTF-8")
+    val lineIterator: Iterator[String] = source.getLines()
+    lineIterator.foreach(println)
+    source.close
 }
 
 

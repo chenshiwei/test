@@ -26,13 +26,14 @@ public class JDBCUtil {
 
     private JDBCUtil() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+//            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        this.url = Constants.JDBC_URL;
-        this.username = Constants.JDBC_USERNAME;
-        this.password = Constants.JDBC_PASSWORD;
+        this.url = Constants.SY_URL;
+        this.username = Constants.SY_USERNAME;
+        this.password = Constants.SY_PASSWORD;
         try {
             connection = (Connection) DriverManager.getConnection(url,
                 username, password);
