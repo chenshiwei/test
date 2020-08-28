@@ -25,7 +25,7 @@ object CardTest extends Enumeration {
 
         val rand = new Random
         val f = List(M, T, H, F)
-        val K = List("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+        val K = List("DeleteTest", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
         (0 until 4).foreach(_ =>
             println(s"${f(rand.nextInt(4))}${K(rand.nextInt(13))}"))
 

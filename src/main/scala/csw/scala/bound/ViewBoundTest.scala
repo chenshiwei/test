@@ -3,7 +3,7 @@ package csw.scala.bound
 object ViewBoundTest extends App {
     //  val p = new Piar(1, 2)
     //  println(p.smaller)
-    val s1 = new Student("A")
+    val s1 = new Student("DeleteTest")
     val s2 = new Student("B")
 
     val p = new Pair(s1, s2)

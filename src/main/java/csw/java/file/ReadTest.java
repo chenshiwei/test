@@ -10,7 +10,7 @@ import java.io.*;
  */
 public class ReadTest {
     public static void main(String[] args) {
-        File file = new File("F:\\数据\\u2jiankong-2019.12.json");
+        File file = new File("F:\\DATA\\uyun-netalert-2020.05.06.json");
         try (             FileReader fr = new FileReader(file);
              BufferedReader br = new BufferedReader(fr)) {
             String line = "";

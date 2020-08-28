@@ -21,7 +21,7 @@ object ImplicitMethodTest extends App {
     }
 
     implicit def A2B(x: TestA) = {
-        println("A 2 B")
+        println("DeleteTest 2 B")
         new TestB
     }
 

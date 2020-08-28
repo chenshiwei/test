@@ -1,0 +1,88 @@
+{
+  "name": "data_view",
+  "runnerParameters": {
+    "openApiUri": "http://10.1.11.153:7508/",
+    "openApiKey": "9cc4871e46094635a19d26557f9bb7f4",
+    "hdfsHttpFS": "http://192.168.0.203:50070",
+    "nodeId": "3"
+  },
+  "nodes": [
+    {
+      "name": "数据输入",
+      "id": 1,
+      "type": "data_input",
+      "config": {
+        "security": {
+          "auth": {
+            "password": ">>>A3FC47B8DCC6229E5802EA730F1BCE25<<<",
+            "ssl": false,
+            "username": "admin"
+          },
+          "typeNum": 1
+        },
+        "format": "es",
+        "options": {
+          "es.net.http.auth.user": "admin",
+          "path": "dw_iris_model*/_doc",
+          "es.nodes": "10.1.11.154:9200",
+          "es.net.http.auth.pass": ">>>A3FC47B8DCC6229E5802EA730F1BCE25<<<",
+          "es.index.auto.create": "true"
+        },
+        "version": "7.x"
+      },
+      "prevNodeIds": [
+        -1
+      ]
+    },
+    {
+      "name": "数据输出",
+      "id": 2,
+      "type": "data_output",
+      "config": {
+        "security": {
+          "auth": {
+            "password": ">>>A3FC47B8DCC6229E5802EA730F1BCE25<<<",
+            "ssl": false,
+            "username": "admin"
+          },
+          "typeNum": 1
+        },
+        "format": "es",
+        "options": {
+          "es.net.http.auth.user": "admin",
+          "cluster_name": "elasticsearch",
+          "path": "dm_test0519/_doc",
+          "es.nodes": "10.1.11.154:9200",
+          "es.net.http.auth.pass": ">>>A3FC47B8DCC6229E5802EA730F1BCE25<<<",
+          "es.http.nodes": "10.1.11.154:9300",
+          "es.index.auto.create": "true"
+        },
+        "version": "7.x",
+        "outputCols": [
+          "PetalWidth",
+          "Name",
+          "SepalLength",
+          "PetalLength",
+          "SepalWidth"
+        ]
+      },
+      "prevNodeIds": [
+        3
+      ]
+    },
+    {
+      "name": "自定义py",
+      "id": 3,
+      "type": "custom_python",
+      "config": {
+        "path": "/uyun/databank/spark/evolution/pipeline/custpy/test0507_1589854732040.py",
+        "addCols": [],
+        "pyName": "test0507_1589854732040.py",
+        "deleteCols": []
+      },
+      "prevNodeIds": [
+        1
+      ]
+    }
+  ]
+}

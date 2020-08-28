@@ -9,7 +9,7 @@ public class HelloPython {
         // TODO Auto-generated method stub
         Process proc;
         try {
-            proc = Runtime.getRuntime().exec("python E:\\Pyworkspace\\python\\lect04\\test1.py");// 执行py文件
+            proc = Runtime.getRuntime().exec("python E:\\workspace\\evolution\\pipeline-py\\main.py");// 执行py文件
             //用输入输出流来截取结果
             BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
             String line = null;

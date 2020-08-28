@@ -4,7 +4,7 @@ import java.io.File;
 
 public class FileListTest {
     public static void main(String[] args) {
-        File f = new File("F:\\MavenProject\\test");
+        File f = new File("E:\\MavenProject\\test");
         System.out.println(f.getName());
         list(f, 0);
     }
